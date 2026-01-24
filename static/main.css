@@ -1,0 +1,23 @@
+
+body {
+  background-color: black;
+}
+
+@keyframes myAnimation{
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+body {
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 50%;
+  width: 50%;
+}
