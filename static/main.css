@@ -1,23 +1,76 @@
-
 body {
-  background-color: black;
+  background-color: #0F1115;
+  color: #EDEDF2;
+  font-family: 'Inter', sans-serif;
 }
 
-@keyframes myAnimation{
-  from {background-color: red;}
-  to {background-color: blue;}
-}
-
-body {
-  animation-name: myAnimation;
-  animation-duration: 4s;
-}
-
-.row {
+.hero-section {
+  min-height: 80vh;
   display: flex;
+  align-items: center;
 }
 
-.col {
-  flex: 50%;
-  width: 50%;
+.hero-image {
+  max-width: 90%;
+  border-radius: 12px;
+  opacity: 0.85;
+}
+.hero-image {
+  filter: grayscale(20%) brightness(0.9);
+}
+@media (max-width: 768px) {
+  .hero-image {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #B8BBC6;
+  max-width: 500px;
+}
+.hero-image {
+  max-width: 85%;
+  border-radius: 14px;
+  opacity: 0.8;
+  filter: grayscale(30%) brightness(0.9);
+}
+
+.soft-divider {
+  border: none;
+  border-top: 1px solid #232634;
+  margin: 0;
+}
+.content-section {
+  padding: 4rem 0;
+}
+
+.content-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-section p {
+  color: #B8BBC6;
+  max-width: 600px;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #7B6CF6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section-link:hover {
+  text-decoration: underline;
 }
