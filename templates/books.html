@@ -1,4 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
-<p>hi</p>
+<title>Books</title>
+<link rel="stylesheet" href="{{url_for('static', filename='books.css')}}">
+<section class="page-header">
+  <div class="container">
+    <h1>Books</h1>
+    <p>
+      A curated selection of written work and PDF publications. 
+      Where stories and words live and belong
+    </p>
+  </div>
+</section>
+<div class="container">
+  <hr class="soft-divider">
+</div>
+<section class="book-split">
+  <div class="container book-grid">
+
+    <!-- LEFT SIDE: TEXT -->
+    <div class="book-text">
+      <h2>The Night Archive</h2>
+
+      <p class="book-description">
+        A literary fiction piece exploring memory, silence, and the
+        act of observation. The story follows a narrator who records
+        fragments of nights that no longer exist.
+      </p>
+
+      <ul class="book-info">
+        <li><strong>Genre:</strong> Fiction</li>
+        <li><strong>Format:</strong> PDF</li>
+        <li><strong>Year:</strong> 2025</li>
+        <li><strong>Length:</strong> 42 pages</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT SIDE: PREVIEW -->
+    <div class="book-preview">
+      <a href="pdfs/night-archive.pdf" target="_blank">
+        <img src="Book.png" alt="First page of The Night Archive">
+      </a>
+      <p class="preview-caption">Fiction · PDF · 2025</p>
+    </div>
+
+  </div>
+</section>
+<section class="book-split">
+  <div class="container book-grid">
+
+    <!-- LEFT SIDE: PREVIEW -->
+    <div class="book-preview">
+      <a href="pdfs/night-archive.pdf" target="_blank">
+        <img src="https://i.pinimg.com/736x/d1/92/e2/d192e22d1648255d77dd0bea737cf56d.jpg" alt="First page of The Night Archive">
+      </a>
+      <p class="preview-caption">Fiction · PDF · 2025</p>
+    </div>
+
+    <!-- RIGHT SIDE: TEXT -->
+    <div class="book-text">
+      <h2>The Night Archive</h2>
+
+      <p class="book-description">
+        A literary fiction piece exploring memory, silence, and the
+        act of observation. The story follows a narrator who records
+        fragments of nights that no longer exist.
+      </p>
+
+      <ul class="book-info">
+        <li><strong>Genre:</strong> Fiction</li>
+        <li><strong>Format:</strong> PDF</li>
+        <li><strong>Year:</strong> 2025</li>
+        <li><strong>Length:</strong> 42 pages</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 {% endblock %}

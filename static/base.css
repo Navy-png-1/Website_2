@@ -15,3 +15,86 @@
 .navbar {
   border-bottom: 1px solid #232634;
 }
+
+.nav-item {
+    font-family: "Lucida Handwriting";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+/* ===== NAVBAR BACKGROUND ===== */
+.navbar {
+  padding: 2rem 0 !important;
+  background: linear-gradient(
+    135deg,
+    #12162b,
+    #1b2040
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== BRAND ===== */
+.navbar-brand {
+  font-size: 2.1rem !important;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5f6ff !important;
+
+  /* elegant + editorial look */
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+}
+
+/* ===== NAV LINKS ===== */
+.navbar-nav .nav-link {
+  font-size: 1.05rem;
+  margin-left: 2.2rem;
+  letter-spacing: 0.08em;
+  color: rgba(240, 241, 255, 0.75) !important;
+  position: relative;
+}
+
+.navbar-brand {
+  margin-left: 3rem;      /* moves brand away from screen edge */
+  padding-right: 2rem;    /* space between brand & nav links */
+}
+
+.navbar-brand {
+  text-shadow:
+    0 0 8px rgba(154, 163, 255, 0.35),
+    0 0 18px rgba(154, 163, 255, 0.15);
+}
+/* underline */
+.navbar-nav .nav-link::after {
+  background: var(--accent);
+}
+
+/* brand glow sync */
+.navbar-brand {
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--accent) 60%, transparent),
+    0 0 18px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+:root {
+  --accent: #9aa3ff; /* change this to match a book cover */
+}
+/* ACTIVE NAV LINK */
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* glow underline stays visible */
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  background: var(--accent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* soft glow around text */
+.navbar-nav .nav-link.active {
+  text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
+}

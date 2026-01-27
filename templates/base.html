@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
+<link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/08/6a/0b/086a0b79f92270be5a930f431b31fd9d.jpg">
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navya</a>
@@ -19,16 +20,16 @@
           <a class="nav-link active" aria-current="page" href="{{url_for('main')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url_for('books')}}">Books</a>
+          <a class="nav-link active" aria-current="page" href="{{url_for('books')}}">Books</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+          <a class="nav-link active" aria-current="page" href="{{url_for('projects')}}">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url_for('archive')}}">Archive</a>
+          <a class="nav-link active" aria-current="page" href="{{url_for('archive')}}">Archive</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url_for('about')}}">About</a>
+          <a class="nav-link active" aria-current="page" href="{{url_for('about')}}">About</a>
         </li>
       </ul>
     </div>

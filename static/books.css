@@ -1,0 +1,99 @@
+body {
+  background-color: #0F1115;
+  color: #EDEDF2;
+  font-family: 'Inter', sans-serif;
+}
+.page-header {
+  padding: 4rem 0 2rem 0;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #B8BBC6;
+  max-width: 600px;
+}
+.book-split {
+  padding: 4rem 0 6rem 0;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+.book-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.book-description {
+  color: #B8BBC6;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 1.5rem;
+}
+
+.book-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-info li {
+  color: #9DA1B3;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.book-info strong {
+  color: #E6E8F0;
+  font-weight: 500;
+}
+.book-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-preview img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
+}
+
+.book-preview img:hover {
+  transform: translateY(-4px);
+}
+.preview-caption {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #8F93A3;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 900px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-preview {
+    margin-top: 2rem;
+  }
+
+  .book-text h2 {
+    font-size: 2rem;
+  }
+}
+
+:root {
+  --accent: #9aa3ff; /* change this to match a book cover */
+}
