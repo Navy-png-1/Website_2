@@ -1,28 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
-
-<p>hi</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Archive</title>
+<link rel="stylesheet" href="{{url_for('static', filename='archive.css')}}">
+</head>
 <body>
-  <img src="https://png.pngtree.com/thumb_back/fh260/background/20240814/pngtree-spring-time-with-beautiful-cherry-blossoms-pink-sakura-flowers-image_16131927.jpg" width="900" height="500" alt="Tokyo">
-  <hr class="dotted">
-    <div class="row">
-      <div class="col">
-        Column
-      </div>
+  <div class="page-container">
+  <section class="archive">
+  <h1 class="page-title">Archive</h1>
+  <p class="page-subtitle">Writing & selected publications</p>
+
+  <div class="archive-item">
+    <div class="archive-text">
+      <h2>Moonbound</h2>
+      <span class="archive-meta">Fiction · PDF · 2025</span>
+      <p>
+        A speculative short story exploring memory, distance,
+        and quiet transformation.
+      </p>
+      <a href="pdfs/moonbound.pdf" class="archive-link">Read →</a>
     </div>
-  <hr class="dotted">
-  <div class="card" style="width: 63rem; height: 40rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    </div>
+
+    <a href="pdfs/moonbound.pdf" class="archive-image">
+      <img src="https://i.pinimg.com/736x/15/26/f5/1526f54a33e0d372781ad9ebff251943.jpg" alt="Moonbound first page">
+      <span class="image-caption">Fiction · PDF · 2025</span>
+    </a>
   </div>
-  <div class="card" style="width: 63rem; height: 40rem; float: right; top: 0;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    </div>
+</section>
+</div>
 </body>
+</html>
+
+
+
 {% endblock %}

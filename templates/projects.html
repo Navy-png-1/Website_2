@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
-<body> Hi</body>
 <title>Projects</title>
-<hr class="dotted">
+<link rel="stylesheet" href="{{url_for('static', filename='projects.css')}}">
+<div class="page-container">
+  <section class="projects">
+  <h1 class="page-title">Projects</h1>
+  <p class="page-subtitle">Selected computer science work</p>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h2>Syntax Visualizer</h2>
+      <span class="project-meta">Python · AST · UI</span>
+      <p>
+        A visual tool that transforms Python code into interactive
+        syntax trees, designed to help beginners understand parsing
+        and structure.
+      </p>
+      <a href="#" class="project-link">View project →</a>
+    </div>
+
+    <div class="project-preview">
+      <img src="images/syntax-preview.png" alt="Syntax Visualizer preview">
+    </div>
+  </div>
+</section>
+
+</div>
+
+
 {% endblock %}

@@ -1,0 +1,183 @@
+body {
+  background-color: #0F1115;
+  color: #EDEDF2;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0F1115;
+  color: #EDEDF2;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 30%;
+  border-radius: 12px;
+  opacity: 0.85;
+}
+.hero-image {
+  filter: grayscale(20%) brightness(0.9);
+}
+@media (max-width: 768px) {
+  .hero-image {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #B8BBC6;
+  max-width: 500px;
+}
+.hero-image {
+  max-width: 85%;
+  border-radius: 14px;
+  opacity: 0.8;
+  filter: grayscale(30%) brightness(0.9);
+}
+
+.soft-divider {
+  border: none;
+  border-top: 1px solid #232634;
+  margin: 0;
+}
+.content-section {
+  padding: 4rem 0;
+}
+
+.content-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-section p {
+  color: #B8BBC6;
+  max-width: 600px;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #7B6CF6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+}
+
+.navbar {
+  border-bottom: 1px solid #232634;
+}
+
+.nav-item {
+    font-family: "Lucida Handwriting";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+/* ===== NAVBAR BACKGROUND ===== */
+.navbar {
+  padding: 2rem 0 !important;
+  background: linear-gradient(
+    135deg,
+    #12162b,
+    #1b2040
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== BRAND ===== */
+.navbar-brand {
+  font-size: 2.1rem !important;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5f6ff !important;
+
+  /* elegant + editorial look */
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+}
+
+/* ===== NAV LINKS ===== */
+.navbar-nav .nav-link {
+  font-size: 1.05rem;
+  margin-left: 2.2rem;
+  letter-spacing: 0.08em;
+  color: rgba(240, 241, 255, 0.75) !important;
+  position: relative;
+}
+
+.navbar-brand {
+  margin-left: 3rem;      /* moves brand away from screen edge */
+  padding-right: 2rem;    /* space between brand & nav links */
+}
+
+.navbar-brand {
+  text-shadow:
+    0 0 8px rgba(154, 163, 255, 0.35),
+    0 0 18px rgba(154, 163, 255, 0.15);
+}
+/* underline */
+.navbar-nav .nav-link::after {
+  background: var(--accent);
+}
+
+/* brand glow sync */
+.navbar-brand {
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--accent) 60%, transparent),
+    0 0 18px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+:root {
+  --accent: #9aa3ff; /* change this to match a book cover */
+}
+/* ACTIVE NAV LINK */
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* glow underline stays visible */
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  background: var(--accent);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* soft glow around text */
+.navbar-nav .nav-link.active {
+  text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
+}

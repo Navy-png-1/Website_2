@@ -97,3 +97,23 @@ body {
 :root {
   --accent: #9aa3ff; /* change this to match a book cover */
 }
+
+.book-cover {
+  position: relative;
+  display: inline-block;
+}
+
+.book-cover img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.book-cover .caption {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: #d6dcff;
+}
