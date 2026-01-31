@@ -4,12 +4,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  background-color: #0F1115;
-  color: #EDEDF2;
-  font-family: 'Inter', sans-serif;
-}
-
 .hero-section {
   min-height: 80vh;
   display: flex;
@@ -180,4 +174,19 @@ body {
 /* soft glow around text */
 .navbar-nav .nav-link.active {
   text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.story {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #D1D2D6;
+}
+
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }

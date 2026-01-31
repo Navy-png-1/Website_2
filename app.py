@@ -26,4 +26,8 @@ def about():
 def one():
     return render_template("one.html")
 
+@app.route("/story")
+def story():
+    return render_template("story.html")
+
 app.run(debug=True)
