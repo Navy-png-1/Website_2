@@ -98,3 +98,8 @@
 .navbar-nav .nav-link.active {
   text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
 }
+
+body, html {
+  cursor: url(https://i.pinimg.com/736x/f9/27/4c/f9274c49951d0b002a37d2c4d838e1a9.jpg), pointer;
+
+}
