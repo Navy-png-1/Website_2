@@ -4,6 +4,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
 .about-hero {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -34,6 +35,7 @@ body {
   line-height: 1.7;
   max-width: 520px;
   color: rgba(234, 234, 240, 0.9);
+  font-family: 'Copperplate Gothic Light', fantasy;
 }
 
 .about-sub {
@@ -41,6 +43,7 @@ body {
   font-size: 1rem;
   line-height: 1.8;
   color: rgba(234, 234, 240, 0.65);
+  font-family: 'Copperplate Gothic Light', fantasy;
 }
 
 /* RIGHT IMAGE */

@@ -17,7 +17,7 @@
 }
 
 .nav-item {
-    font-family: "Lucida Handwriting";
+    font-family: 'Lucinda Handwriting', cursive;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -44,6 +44,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #f5f6ff !important;
+  text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
 
   /* elegant + editorial look */
   font-family: "Playfair Display", "Cormorant Garamond", serif;
@@ -61,6 +62,7 @@
 .navbar-brand {
   margin-left: 3rem;      /* moves brand away from screen edge */
   padding-right: 2rem;    /* space between brand & nav links */
+  text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
 .navbar-brand {

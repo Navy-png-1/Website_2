@@ -29,5 +29,7 @@ def one():
 @app.route("/story")
 def story():
     return render_template("story.html")
-
+@app.route("/certificates")
+def c():
+    return render_template("c.html")
 app.run(debug=True)
