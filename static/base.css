@@ -94,6 +94,10 @@
   width: 100%;
   background: var(--accent);
   box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 60%, transparent);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 50%, transparent);
+  text-shadow:
+    0 0 8px rgba(154, 163, 255, 0.35),
+    0 0 18px rgba(154, 163, 255, 0.15);
 }
 
 /* soft glow around text */
