@@ -190,3 +190,12 @@ h6 {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+.btn btn-secondary dropdown-toggle {
+  background-color: #7B6CF6;
+  border: none;
+  color: #EDEDF2;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
